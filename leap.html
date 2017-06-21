@@ -1,0 +1,30 @@
+<html>
+<head>
+<script type="text/javascript">
+function yes(){
+var yr=document.getElementById("yr").value;
+
+if(yr%400==0)
+{
+	alert("leap");
+	
+}
+else if(yr%100==0)
+{
+	alert("not leap");
+	
+}
+else if(yr%4==0)
+{
+		alert("leap");
+
+}
+}
+</script>
+</head>
+<body>
+<form>
+<label>Enter Year</label>
+<input type="number" id="yr">
+<input type="button" value="Get Your Ans" onClick="yes()">
+</body>
